@@ -12,18 +12,21 @@ MacTeX (on a Mac, duh).
 
 ### If you have make installed: 
 * ```make```
+
 To clean up:
 * ```make clean```
 
 ### Without make:
-* lualatex ccraddock_cv
-* bibtex ccraddock_cv.1
-* bibtex ccraddock_cv.2
-* bibtex ccraddock_cv.3
-* lualatex ccraddock_cv
-* lualatex ccraddock_cv
-* lualatex ccraddock_cv
-* mv ccraddock_cv.pdf "ccraddock_cv_$( date "+%m%d%Y" ).pdf"
-* rm -v *.aux *.bbl *.blg *.log
+```
+lualatex ccraddock_cv
+bibtex ccraddock_cv.1
+bibtex ccraddock_cv.2
+bibtex ccraddock_cv.3
+lualatex ccraddock_cv
+lualatex ccraddock_cv
+lualatex ccraddock_cv
+mv ccraddock_cv.pdf "ccraddock_cv_$( date "+%m%d%Y" ).pdf"
+rm -v *.aux *.bbl *.blg *.log
+```
 
 
