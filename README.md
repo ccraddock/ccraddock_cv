@@ -3,8 +3,9 @@ This is the CV for Cameron Craddock. I put it on github for basic versioning,
 but also to make it readily available when I am on the road. 
 
 ## To clone this repository:
-* for read only: git clone git://github.com/ccraddock/ccraddock_cv.git ccraddock_cv
-* for full access (requires ssh_key on file): git clone https://github.com/ccraddock/ccraddock_cv.git ccraddock_cv
+* for read only: ```git clone git://github.com/ccraddock/ccraddock_cv.git ccraddock_cv```
+
+* for full access (requires access): ```git clone https://github.com/ccraddock/ccraddock_cv.git ccraddock_cv```
 
 ## To build the LuaLaTex files:
 This procedure requires that you have lualatex installed for font support, this should work autmagickally if you have
