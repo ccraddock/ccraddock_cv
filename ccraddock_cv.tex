@@ -13,6 +13,11 @@
 \usepackage[parfill]{parskip}
 %\usepackage{lipsum}
 %\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{ragged2e}
+\definecolor{richgreen}{RGB}{115,147,61}
+\definecolor{richorange}{RGB}{245,128,37}
 
 \makeatletter
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
@@ -91,11 +96,11 @@ Virginia Tech Carilion Research Institute, Roanoke, VA \\
 Computational Psychiatry Unit, Department of Neuroscience, Baylor College of Medicine, Houston, TX \\
 \emph{Supervisor:} Stephen M. LaConte, PhD\\
 
-\newpage{}
 {\bf Supervising Research Specialist} \hfill {01/2007 \textendash{} 10/2009} \\
 Department of Psychiatry and Behavioral Sciences, Emory University School of Medicine, Atlanta, GA \\ 
 \emph{Supervisors:} Helen Mayberg, MD and Paul Holtzheimer, MD \\
 
+\newpage{}
 {\bf Guest Researcher} \hfill {06/2004 \textendash{} 01/2007} \\
 Centers for Disease Control and Prevention, Atlanta, GA \\
 \emph{Supervisors:} Brian Gurbaxani, PhD and Suzanne Vernon, PhD \\
@@ -135,37 +140,43 @@ Central Intelligence Agency, Washington DC \\
 
 European Patent 11188849.1 \textendash{} 1560 \hfill 11/11/11 \\
 \emph{Inventors:} R. Cameron Craddock, Yating Lv, Daniel Margulies, Arno Villringer  \\
-\emph{Title:} Method and apparatus for visualization of tissue perfusion by means of assessing BOLD signal fluctuations \\
+\emph{Title:} \raggedright{Method and apparatus for visualization of tissue perfusion by means of assessing BOLD signal fluctuations} \\
 
 \newpage{}
-\textbf{\Large{Journal Publications}} \smallskip \hrule \medskip
 
+
+\textbf{\Large{Journal Publications}} \smallskip \hrule \medskip
+\smallskip{}
+\begin{flushleft}
 \bibliographystyle{plainyr-rev}
 \begin{btSect}{ccraddock_journal_pubs}
 \btPrintAll
 \end{btSect}
+\end{flushleft}
 
-\newpage
+%\newpage
 \bigskip{}
 \textbf{\Large{Invited Talks}} \smallskip \hrule \medskip
 
 \smallskip{}
-
+\begin{flushleft}
 \bibliographystyle{plainyr-rev}
 \begin{btSect}{ccraddock_invited_talks}
 \btPrintAll
 \end{btSect}
+\end{flushleft}
 
 %\newpage
 \bigskip{}
 \textbf{\Large{Conference Abstracts}} \smallskip \hrule \medskip
 
 \smallskip{}
-
+\begin{flushleft}
 \bibliographystyle{plainyr-rev}
 \begin{btSect}{ccraddock_conf_pubs}
 \btPrintAll
 \end{btSect}
+\end{flushleft}
 
 \bigskip{}
 %\newpage{}
@@ -174,28 +185,36 @@ European Patent 11188849.1 \textendash{} 1560 \hfill 11/11/11 \\
 \smallskip{}
 
 \noindent\emph{Advisor}, 2011 - Current, Child Mind Institute Endeavor Scientist Program\\
+\smallskip{}
 
 \noindent\emph{Video Advisor}, 2010 - 2011, NeuroImage YouTube Channel\\
+\smallskip{}
 
 \noindent\emph{Co-founder}, The Neuro Bureau\\
+\smallskip{}
 
 \noindent\emph{Journal Reviewer}, NeuroImage, Human Brain Mapping, Journal of Neuroscience Methods,
     Frontiers in Systems Neuroscience, IEEE Transactions in Medical Imaging, Magnetic Resonance Imaging, 
     Biological Psychiatry, Frontiers in Neuroanatomy, Neuroinformatics, JAMA Psychiatry \\
+\smallskip{}
 
 \noindent\emph{Conference Organizer}, 2012 BrainHack and UnConference, Brainhack 2013\\
+\smallskip{}
 
 \noindent\emph{Conference Reviewer}, 17$^{th}$ Meeting of the Organization for Human Brain Mapping (2011),
  16$^{th}$ Meeting of the Organization for Human Brain Mapping (2010), 13$^{th}$ International Conference on Medical Image
  Computing and Computer Assisted Intervention (2010)\\
+ \smallskip{}
 
 \noindent\emph{Judge}, 2005 Georgia State Science and Engineering Fair, Athens, GA\\
+\smallskip{}
 
 \noindent\emph{Mentor}, 2002-2003, Georgia Tech Intel Opportunity Scholars, Atlanta,
 GA\\
+\smallskip{}
 
 %\newpage{}
-
+\bigskip{}
 \textbf{\Large{Honors and Awards}} \smallskip \hrule \medskip
 \noindent 2013, Biobehavioral Research Awards for Innovative New Scientists (BRAINS), NIH/NIMH \\
 \noindent 2011, Poster Award, 1$^{st}$ Place Functional Imaging, 19th Scientific Meeting of the International \\
@@ -217,7 +236,7 @@ GA\\
 \noindent 1995-1999, Georgia Tech Faculty Honors twice\\
 
 %\newpage{}
-
+\bigskip{}
 \textbf{\Large{Professional Memberships}} \smallskip \hrule \medskip
 %\begin{singlespace}
 %\noindent Institute for Electrical and Electronics Engineers (EMBS,
@@ -226,6 +245,7 @@ GA\\
 \noindent Organization for Human Brain Mapping\\
 %\end{singlespace}
 
+\bigskip{}
 \textbf{\Large{Other Education/Certifications}} \smallskip \hrule \medskip
 %\begin{singlespace}
 \noindent 2010, Siemens ICE and SDE programming courses
