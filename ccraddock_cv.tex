@@ -34,6 +34,12 @@
 %\usepackage{pslatex}
 \usepackage[english]{babel}
 
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\emph{R. Cameron Craddock}}
+\renewcommand{\headrulewidth}{0pt}
 % adjusting spacing
 %\setlength{\lineskip}{0pt}
 %\setlength{\parskip}{0pt}
@@ -47,6 +53,8 @@
 %\linespread{1}
 
 \begin{document}
+
+\thispagestyle{plain}
 
 \begin{center}
 \textbf{\Large Richard Cameron Craddock}\\
@@ -81,22 +89,27 @@ Georgia Institute of Technology, Atlanta, GA \\
 
 \textbf{\Large{Experience}} \smallskip \hrule \medskip
 
+{\bf Research Professor} \hfill {05/2016 \textendash{} present} \\
+Department of Computer Science and Engineering,\\
+NYU Tandon School of Engineering, Brooklyn, NY \\
+
 {\bf Director, Computational Neuroimaging Lab} \hfill {08/2014 \textendash{} present} \\
 Center for Biomedical Imaging and Neuromodulation,\\
 Nathan S. Kline Institute for Psychiatric Research, Orangeburg, NY \\
 
 {\bf Director of Imaging} \hfill {07/2012 \textendash{} present} \\
-Center for the Developing Brain, Child Mind Institute, New York, NY \\
+Center for the Developing Brain and the Healthy Brain Network,\\
+Child Mind Institute, Inc., New York, NY \\
 
-{\bf Research Scientist VI} \hfill {07/2012 \textendash{} present} \\
+{\bf Research Scientist VI} \hfill {07/2012 \textendash{} 11/2015} \\
 Research Foundation for Mental Health, Inc.,\\
 Nathan S. Kline Institute for Psychiatric Research, Orangeburg, NY \\
 
+\newpage{}
 {\bf Postdoctoral Associate} \hfill {10/2010 \textendash{} 06/2012} \\
 Virginia Tech Carilion Research Institute, Roanoke, VA \\
 \emph{Supervisor:} Stephen M. LaConte, PhD\\
 
-\newpage{}
 {\bf Research Associate} \hfill {10/2009 \textendash{} 10/2010} \\
 Computational Psychiatry Unit, Department of Neuroscience, Baylor College of Medicine, Houston, TX \\
 \emph{Supervisor:} Stephen M. LaConte, PhD\\
@@ -152,15 +165,7 @@ Central Intelligence Agency, Washington DC \\
 \emph{Support Period:} 01/2011 \textendash{} 01/2013 \\
 \emph{Funding Amount:} \$60,000 USD \\
 
-
-\textbf{\Large{Patents}} \smallskip \hrule \medskip
-
-European Patent 11188849.1 \textendash{} 1560 \hfill 11/11/11 \\
-US Patent 20,130,144,154 \hfill 06/13 \\
-\emph{Inventors:} R. Cameron Craddock, Yating Lv, Daniel Margulies, Arno Villringer  \\
-\emph{Title:} \raggedright{Method and apparatus for visualization of tissue perfusion by means of assessing BOLD signal fluctuations} \\
-
-\bigskip
+\bigskip{}
 \textbf{\Large{Open Science}} \smallskip \hrule \medskip
 
 \textcolor{richorange}{[Open Source]} Configurable Pipeline for the Analysis of Connectomes \\
@@ -168,43 +173,42 @@ A python-based open source software package for performing connectivity analyses
 \emph{Address:} \href{http://fcp-indi.github.io}{http://fcp-indi.github.io}\\
 \emph{Role:} Project Director, Co-Principal Investigator\\
 
-\bigskip{}
-
 \textcolor{richorange}{[Open Source]} pyClusterROI \\
 An open source python library for parcellating functional MRI data using spatially constrained normalized-cut spectral clustering.\\
 \emph{Address:} \href{http://ccraddock.github.io/cluster_roi}{http://ccraddock.github.io/cluster\_roi}\\
 \emph{Role:} Primary Developer\\
 \emph{Impact:} 2,329 downloads from nitrc.org, 7 Github forks\\
- 
-\bigskip{}
 
 \textcolor{richorange}{[Open Source]} The Preprocessed Connectomes Project Quality Assessment Protocol \\
 An open source python library for estimating several different quality measures from functional and structural MRI data.\\
 \emph{Address:} \href{http://preprocessed-connectomes-project.github.io/quality-assessment-protocol/}{http://preprocessed-connectomes-project.github.io/quality-assessment-protocol/}\\
 \emph{Role:} Project Director, Developer\\
- 
-\bigskip{}
 
 \textcolor{richblue}{[Data Sharing]} Intrinsic Brain Activity Test-Retest Dataset \\ 
 This dataset consists of two ten-minute resting state fMRI scans and two multi source interference task fMRI scans acquired during the same scanning session for thirty-six adults (20-48 years old). 14 of the participants returned for a second scanning session using the same scanning procedures.\\
 \emph{Address:} \href{http://fcon_1000.projects.nitrc.org/indi/CoRR/html/ibatrt.html}{http://fcon\_1000.projects.nitrc.org/indi/CoRR/html/ibatrt.html}\\
 \emph{Role:} Donor\\ 
 
-\bigskip{}
-
+\newpage
 \textcolor{richblue}{[Data Sharing]} ADHD-200 Preprocessed Data \\
 Preprocessed functional and structural data for 374 children and adolescents who suffer from ADHD and 598 typically developing controls from the ADHD-200 sample. Data was processed using three different software pipelines.\\
 \emph{Address:} \href{http://neurobureau.projects.nitrc.org/ADHD200/Introduction.html}{http://neurobureau.projects.nitrc.org/ADHD200/Introduction.html}\\
 \emph{Role:} Co-founder, Contributor\\
 \emph{Impact:} 8,730 downloads from nitrc.org, used in 26 peer reviewed publications and 2 dissertations\\
 
-\bigskip{}
-
 \textcolor{richblue}{[Data Sharing]} ABIDE Preprocessed Data \\
 Preprocessed functional and structural data for 539 individuals suffering from autism and 573 typical controls from the ABIDE dataset. Data was processed using four different functional processing pipelines and three different structural processing pipelines.\\
 \emph{Address:} \href{http://preprocessed-connectomes-project.github.io/abide/}{http://preprocessed-connectomes-project.github.io/abide/}\\
 \emph{Role:} Co-founder, Contributor\\
-%\newpage{}
+
+\bigskip{}
+\textbf{\Large{Patents}} \smallskip \hrule \medskip
+
+European Patent 11188849.1 \textendash{} 1560 \hfill 11/11/11 \\
+US Patent 20,130,144,154 \hfill 06/13 \\
+\emph{Inventors:} R. Cameron Craddock, Yating Lv, Daniel Margulies, Arno Villringer  \\
+\emph{Title:} \raggedright{Method and apparatus for visualization of tissue perfusion by means of assessing BOLD signal fluctuations} \\
+
 \bigskip{}
 \textbf{\Large{Journal Publications}} \smallskip \hrule \medskip
 \smallskip{}
@@ -215,7 +219,7 @@ Preprocessed functional and structural data for 539 individuals suffering from a
 \end{btSect}
 \end{flushleft}
 
-%\newpage
+
 \bigskip{}
 \textbf{\Large{Invited Talks}} \smallskip \hrule \medskip
 
@@ -239,45 +243,92 @@ Preprocessed functional and structural data for 539 individuals suffering from a
 \end{btSect}
 \end{flushleft}
 
-\bigskip{}
 %\newpage{}
+\textbf{\Large{Teaching}} \smallskip \hrule \medskip
+
+08/2013, \emph{Functional Neuroimaging: A Hands On Approach}, Instituto do C\'{e}rebro, PUCRS\\
+\hspace*{6ex}Porto Alegre, Brazil - taught several lectures of 4-day course\\
+
+\smallskip{}
+07/2014, \emph{0407-03: Biomedical Instrumentation and Medical Imaging - Mapping the Connectivity of}\\
+\hspace*{6ex}\emph{the Human Brain}, \textcolor{richgreen}{[\href{http://www.slideshare.net/CameronCraddock/pcp-quality-assessment-protocol}{Web page}]}, Engenharia El\'{e}trica, PUCRS Porto Alegre, Brazil - taught 1\\ 
+\hspace*{6ex}credit of 3 credit course\\
+
+\smallskip{}
+08/2014, \emph{Functional Neuroimaging: A Hands On Approach}, Instituto do C\'{e}rebro, PUCRS\\
+\hspace*{6ex}Porto Alegre, Brazil - taught several lectures of 4-day course\\
+
+\smallskip{}
+07/2015, \emph{Functional Neuroimaging: A Hands On Approach}, Instituto do C\'{e}rebro, PUCRS\\
+\hspace*{6ex}Porto Alegre, Brazil - taught lecture of 4-day course\\
+ 
+\smallskip{}
+10/2015, \emph{Performing High-Throughput Connectomes Analysis with C-PAC Hands-on Course}, \\
+\hspace*{6ex}Institute of Neurobiology, UNAM, Quer\'{e}taro, Mexico - organized and taught\\
+\hspace*{6ex}most lectures of 2-day course\\
+
+\smallskip{}
+10/2015, \emph{Performing High-Throughput Connectomes Analysis with C-PAC Hands-on Course}, \\
+\hspace*{6ex}Institute of Neurobiology, UNAM, Quer\'{e}taro, Mexico - organized and taught\\
+\hspace*{6ex}most lectures of 2-day course\\
+
+\smallskip{}
+12/2015, \emph{Performing High-Throughput Connectomes Analysis with C-PAC Hands-on Course}, \\
+\hspace*{6ex}Child Mind Institute, New York, New York - organized and taught most lectures\\
+\hspace*{6ex}of 2-day course\\
+
+%\newpage{}
+\bigskip{}
 \textbf{\Large{Service}} \smallskip \hrule \medskip
 
+\smallskip{}
+
+\noindent\emph{Founding Chair}, The Organization for Human Brain Mapping Open Science Special Interest Group\\
 \smallskip{}
 
 \noindent\emph{Co-founder}, The Neuro Bureau\\
 \smallskip{}
 
-\noindent\emph{Conference Organizer}, 2012 BrainHack and UnConference, Brainhack 2013, 
-    Brainhack EDT 2014, 2015 OHBM Hackathon, Brainhack Americas 2015, Brainhack MX 2015\\
+\noindent\emph{Guest Editor}, Gigascience Brainhack Thematic Series, NeuroImage Special Issue on Brain \\
+\hspace*{6ex}Segmentation and Parcellation \\
 \smallskip{}
 
-\noindent\emph{Conference Reviewer}, 17\textsuperscript{th} Meeting of the Organization for Human Brain Mapping (2011),
- 16\textsuperscript{th} Meeting of the Organization for Human Brain Mapping (2010), 13\textsuperscript{th} International Conference on Medical Image
- Computing and Computer Assisted Intervention (2010)\\
+\noindent\emph{Editor}, 2015 Brainhack Proceedings \\
+\smallskip{}
+
+\noindent\emph{Conference Organizer}, 2012 BrainHack and UnConference, Brainhack 2013, Brainhack EDT 2014, \\
+\hspace*{6ex}2015 OHBM Hackathon, Brainhack Americas 2015, Brainhack MX 2015, 2016 OHBM \\
+\hspace*{6ex}Hackathon, Brainhack Vienna 2016, Brainhack LA 2016 \\
+\smallskip{}
+
+\noindent\emph{Conference Reviewer}, 17\textsuperscript{th} Meeting of the Organization for Human Brain Mapping (2011),\\
+\hspace*{6ex}16\textsuperscript{th} Meeting of the Organization for Human Brain Mapping (2010), 13\textsuperscript{th} International\\
+\hspace*{6ex}Conference on Medical Image Computing and Computer Assisted Intervention (2010)\\
 \smallskip{}
  
-\noindent\emph{Grant Reviewer}, 2014 - 2016, New Jersey Commission on Brain Injury Research, 2015 NSF/NIH Collaborative Research on Computational Neuroscience\\
+\noindent\emph{Grant Reviewer}, 2014 - 2016 New Jersey Commission on Brain Injury Research, 2015 NSF/NIH\\
+\hspace*{6ex}Collaborative Research on Computational Neuroscience\\
 \smallskip{}
 
-\noindent\emph{Journal Reviewer}, NeuroImage, Human Brain Mapping, Journal of Neuroscience Methods,
-    Frontiers in Systems Neuroscience, IEEE Transactions in Medical Imaging, Magnetic Resonance Imaging, 
-    Biological Psychiatry, Frontiers in Neuroanatomy, Neuroinformatics, JAMA Psychiatry \\
+\noindent\emph{Journal Reviewer}, NeuroImage, Human Brain Mapping, Journal of Neuroscience Methods,\\
+\hspace*{6ex}Frontiers in Systems Neuroscience, IEEE Transactions in Medical Imaging, Magnetic\\
+\hspace*{6ex}Resonance Imaging, Biological Psychiatry, Frontiers in Neuroanatomy, Neuroinformatics,\\
+\hspace*{6ex}JAMA Psychiatry \\
 \smallskip{}
 
 
 \noindent\emph{Judge}, 2005 Georgia State Science and Engineering Fair, Athens, GA\\
 \smallskip{}
 
-\noindent\emph{Mentor}, 2002-2003, Georgia Tech Intel Opportunity Scholars, Atlanta,
-GA, 2011 - 2014, Child Mind Institute Endeavor Scientist Program\\
+\noindent\emph{Mentor}, 2002-2003 Georgia Tech Intel Opportunity Scholars, Atlanta, GA, 2011 - 2014 Child Mind\\
+\hspace*{6ex}Institute Endeavor Scientist Program\\
 \smallskip{}
 
 \noindent\emph{Video Advisor}, 2010 - 2011, NeuroImage YouTube Channel\\
 \smallskip{}
 
-%\newpage{}
-\bigskip{}
+\newpage{}
+%\bigskip{}
 \textbf{\Large{Honors and Awards}} \smallskip \hrule \medskip
 \noindent 2013, Biobehavioral Research Awards for Innovative New Scientists (BRAINS), NIH/NIMH \\
 \noindent 2011, Poster Award, 1\textsuperscript{st} Place Functional Imaging, 19\textsuperscript{th} Scientific Meeting of the International \\
@@ -327,4 +378,5 @@ GA, 2011 - 2014, Child Mind Institute Endeavor Scientist Program\\
 \noindent Researcher ID: \href{http://www.researcherid.com/rid/P-1980-2014}{http://www.researcherid.com/rid/P-1980-2014}\\
 \noindent ORCiD: \href{http://www.researcherid.com/rid/P-1980-2014}{http://orcid.org/0000-0002-4950-1303}\\
 \noindent SciENcv: \href{https://www.ncbi.nlm.nih.gov/myncbi/richard.craddock.1/cv/18275/}{https://www.ncbi.nlm.nih.gov/myncbi/richard.craddock.1/cv/18275/}\\
+\noindent SlideShare: \href{http://www.slideshare.net/CameronCraddock}{http://www.slideshare.net/CameronCraddock}\\
 \end{document}
