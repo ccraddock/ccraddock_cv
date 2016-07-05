@@ -1,0 +1,116 @@
+%% LyX 1.6.5 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[letterpaper,11pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=.75in,bmargin=1in,lmargin=.75in,rmargin=.75in}
+%\usepackage{setspace}
+%\usepackage[dot,sectcntreset]{bibtopic}
+%\usepackage{natbib}
+\usepackage{fontspec}
+%\setmainfont{Georgia}
+\setmainfont{Arial}
+\usepackage[parfill]{parskip}
+%\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+\definecolor{richgreen}{RGB}{115,147,61}
+\definecolor{richorange}{RGB}{245,128,37}
+\definecolor{richblue}{RGB}{25,57,138}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfill}}}
+{\end{list}}
+
+\makeatother
+%\usepackage{pslatex}
+\usepackage[english]{babel}
+
+% adjusting spacing
+%\setlength{\lineskip}{0pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+%\setlength{\topmargin}{0pt}
+%\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{0pt}
+%\setlength{\itemsep}{10pt}
+%\linespread{1}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\emph{R. Cameron Craddock}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+	
+\thispagestyle{plain}
+
+\raggedright
+
+\begin{center}
+\textbf{\Large Richard Cameron Craddock}\\
+\smallskip{}
+%cameron.craddock@gmail.com\\
+%\smallskip{}
+%110 1\textsuperscript{st} Street, 29G\\ Jersey City, NJ 07302\\ 
+%(404) 625-4973\\
+%\smallskip{}
+%\bigskip{}
+\textbf{\Large Research Statement}\\
+%Prepared \today\\
+\end{center}
+
+\bigskip{}
+\textbf{\Large{Introduction}} \smallskip \hrule \medskip
+My research involves developing new data analysis and neuroimaging techniques for mapping the neurobiological substrates of human cognition and mental health disorders. Although the tools and resources that I build can be applied broadly, I have primarily focused on connectomics, which represents the brain as a graph of its functional and structural connections \cite{paperCraddock2013a}. This is an emerging area of neuroscience that relies on large-scale computation to infer brain connections from neuroimaging data and map them to inter-individual variations in phenotype (i.e. sex, IQ, cognitive abilities, indices of mental health) \cite{paperVaroquaux2013comparingconnectomes,Craddock2015}. This pursuit requires very large numbers of high quality datasets, the high capacity tools and resources to efficiently analyze them, and innovative experimental paradigms to test generated hypotheses. My previous, current, and future research endeavors are all dedicated to addressing these needs using an interdisciplinary approach that integrates aspects of computer engineering, data science, medical imaging, and neuroscience. Consistent with the tenets of open science, I openly share all of the ideas, software, and data developed through these research efforts.
+
+\bigskip{}
+\textbf{\Large{Previous and ongoing research}} \smallskip \hrule \medskip
+
+\textbf{\textit{Novel data analyses for clinical connectomics.}} For my dissertation research, I developed supervised and unsupervised learning frameworks for identifying connectome-based biomarkers of mental health disorders. I applied support vector classification and novel feature selection algorithms to learn a classifier of depression from functional MRI (FMRI) data and achieved 95\% prediction accuracy \cite{paperCraddock2009}. To make this analysis tractable, the dimensionality of the problem was reduced by focusing on the connectivity of 15 brain areas that were chosen based on the existing literature. In order to perform similar analyses on the whole brain, without introducing biases from previous results or anatomical brain atlases, I later developed a spectral clustering approach for learning functionally homogenous brain areas directly from FMRI data \cite{paperCraddock2012}. The result was a multi-scale brain atlas offering various levels of dimensionality reduction while retaining more information about the connectome than anatomical atlases. During my postdoctoral fellowship, I worked with colleagues to develop a method based on time-lag correlation to map brain areas whose blood flow is restricted after stroke \cite{paperLv2013identifying}, which has been subsequently patented \cite{villringer2013method}. In my current position I have worked with collaborators to build a framework for connectome wide association studies \cite{Shehzad2014} and to study the impact of cluster size on prediction analyses \cite{Bellec2015}. I have also authored invited reviews that educate researchers on the key benefits and methodological concerns for applying machine learning to connectomes research \cite{paperCraddock2013a,paperVaroquaux2013comparingconnectomes,Craddock2015,paperCastellanos2013,kelly2012characterizing, DiMartino2014}.
+
+\textbf{\textit{Examining temporal dynamics of brain networks.}} Although most connectome analyses assume that brain networks are static, it is well known that their structure can vary with time or cognitive state. During my post-doctoral fellowship, I utilized support vector regression to learn predictive models of brain networks that could be applied to data from a different time, cognitive state, or individual to measure the generalization of the network across conditions \cite{paperCraddock2013}. Using this technique, I was able to show that dynamics in brain connectivity follow the functional hierarchy of sensory integration proposed in the 1980’s. This research was awarded a 1st place poster award in functional neuroimaging at the 2011 meeting of the International Society for Magnetic Resonance in Medicine (ISMRM), the de facto conference for MRI physics. More recently, I have continued this research by working with colleagues to investigate how boundaries between functionally defined brain areas change over time \cite{Yang2014}.
+
+\textbf{\textit{Examining network dynamics with real-time FMRI.}} Connectomic analyses of brain disorders typically focus on identifying differences in graph structure, but failure to appropriately regulate brain networks has been implicated in several disorders including ADHD, depression, social anxiety, traumatic brain injury and many others. During my post-doctoral fellowship, I developed a multivariate method for tracking the activity of networks from FMRI data in real-time \cite{absCraddock2012a}. The output of this system can be used to develop a brain-computer interface, provide neurofeedback to the participant, or enable a variety of other dynamic experiments. I am currently using this technique to identify the mechanisms and phenotypic correlates of network dysregulation across a variety of mental health disorders and symptom profiles. I have received a 2010 NARSAD Young Investigators Award from the Brain and Behavior Foundation and an ongoing 2012 Biobehavioral Research Award for Innovative New Scientists (BRAINS) R01 from the National Institutes of Mental Health to support this research.
+
+\textbf{\textit{Building large-scale datasets.}} Answering the next generation of neuroscientific questions using data science techniques will require very large and phenotypically rich datasets. My colleagues and I are taking a multifaceted open-science approach for building data sharing repositories for amassing these datasets and making them broadly accessible. In my current position, I am involved in the NKI Enhanced Rockland Sample (NKI-ERS) and Healthy Brain Network (HBN), which are both large-scale data collection efforts that combine comprehensive neuroimaging with a diverse assessment battery. The NKI-ERS is a consortium of four NIH grants (my R01 and 3 others) that are pooling resources to collect data from thousands of individuals, with a variety of mental health disorders, symptoms, and cognitive abilities, from throughout the lifespan \cite{paperNooner2012nki}. In addition to partially funding the effort, I oversee the neuroinformatics infrastructure used to house and analyze the data and assist with image acquisition related issues. The HBN is a foundation-funded initiative that aims to collect data from 10,000 children and adolescents, across the spectrum of mental health and cognitive abilities, from the greater New York City area. I am the director of imaging for this endeavor, which involves specifying the neuroimaging protocols, overseeing image acquisition, as well as managing and analyzing the data.
+
+Complimentary to these data collection efforts, my colleagues and I are actively aggregating data from smaller experiments across many different labs and openly sharing the results. Among these efforts is the International Neuroimaging Datasharing Initiative (INDI), to which I contribute data as well as assist in the data curation process \cite{Mennes2013}. The data from the NKI, HBN, and INDI initiatives are openly shared on the Internet with limited restriction beyond necessary privacy protections. Despite the open access of these data repositories, the size and complexity of the processing necessary to make the data suitable for further analysis presents an insurmountable hurdle for many would-be researchers. During my post-doctoral fellowship my colleagues and I created the Preprocessed Connectomes Project to calculate and share preprocessed versions of data available through INDI \cite{Bellec2016}. The results have been used in 50 publications, 3 PhD dissertations, 3 Master’s theses, and a patent.
+
+\textbf{\textit{Open source software for high capacity data processing and analysis.}} Conventional neuroimaging tools were developed in an era typified by small scale data analysis and do not have the capacity to efficiently process very large datasets. My team at the Child Mind Institute is building the Configurable Pipeline for the Analysis of Connectomes (CPAC) open source software package to combine these tools into pipelines for automated processing and managing their efficient execution on high-performance computing resources \cite{absCraddock2013INCFa}. Methods are chosen for inclusion into CPAC based on painstaking evaluations of the variety of techniques proposed in the literature (e.g., \cite{paperYan2013comprehensive,paperYan2013,paperYan2013smallworld}). When an open source implementation of a method is unavailable, or is overly resource intensive, we develop our own with careful optimization. CPAC additionally includes features that enable plurality by allowing multiple configurations to be run simultaneously without needlessly duplicating computation, as well as the ability to restart pipelines after an error or reconfiguration without recomputing unaffected pipeline steps. Due to the success of CPAC, we received a contract from the National Institutes of Mental Health to integrate it with the National Database for Autism Research data sharing repository and perform a proof-of-concept for performing neuroimaging data analysis using cloud computing \cite{absClark2015OHBM}.
+
+Assessing the quality of neuroimaging data and determining which data should be included in an analysis are outstanding issues. In an effort to begin to address this problem, my team and I are developing the Quality Assessment Protocol (QAP), an open source software package for estimating many of the measures proposed in the literature \cite{absShehzad2015incf}. Ultimately the goal is to use these measures to learn automated classifiers for indicating poor quality data and to this end we have also developed a repository of QAP measures, along with manually applied quality labels, calculated on data from openly shared data repositories.
+
+\bigskip{}
+\textbf{\Large{Future research}} \smallskip \hrule \medskip
+
+In addition to continuing support of the INDI, CPAC, and PCP open science initiatives; my future research will focus on large-scale connectomics analysis and utilizing real-time FMRI to develop dynamic experiments for measuring network function. 
+
+\textbf{\textit{Large scale analyses of connectomes to delineate the neurobiology of mental health disorders.}} Mental health disorders are syndromes diagnosed by the presence of a set of symptoms rather than an objective measure of biology. As a consequence, a substantial amount of variation exists between individuals who receive the same diagnosis, confounding the ability to map disorders to brain structure and function. Overcoming this hurdle will require new approaches to analyzing this data that focus on dimensions of symptoms rather than categorical labels (regression models) and redefine clinical classifications based on connectome profiles (clustering). In addition to working with data typified by high dimensionality and few observations ($p>>n$), new methods will need to integrate disparate data (i.e. different image modalities, physiological measures, genetics, and assessment data) to fully characterize the subtle neurobiological signatures of mental health disorders. I have begun to build the infrastructure for this research agenda by amassing the large and phenotypically rich datasets needed and developing computational tools for efficiently processing the data. This line of research will involve applying existing and developing new data analysis frameworks, the careful comparison of methods in terms of predictive power and reproducibility of results, and harnessing new computational paradigms (e.g. cloud computing, GPUs) to push the limits of the size and sophistication of analyses that can be performed.
+
+\textbf{\textit{Real-time FMRI based dynamic experiments to characterize brain network function in health and disease across the lifespan.}} The real-time fMRI system that I developed provides me with a unique capability to perform neurofeedback experiments for characterizing and elucidating the underlying mechanisms of network dysregulation in mental health disorders. In the future, I plan to build on my current research into the phenotypic variation related to network regulation in adults, by looking at how these relationships change across the lifespan. To make the current experiment attractive to child and adolescent populations, I plan to develop video games that use the feedback signal to control some aspect of game play. But, since younger participants tend to move quite a bit while in the scanner, there is a concern that the head motion will degrade the feedback signal. Typical approaches for dealing with head motion involves modeling its impact on the data using a regression framework and subtracting the result \cite{absCraddock2012b}. Performing this regression in real-time involves an iterative method that refits the model every time a new data point is available, which results in variation in the quality of the model fit over time. To fix this problem I am working with previously proposed multi-echo FMRI acquisition techniques to differentiate neural signal from noise \cite{Kundu2015} and adapting this computationally intensive method so that it can be used in real-time. I am currently piloting this research with funding from a competitive supplement to my R01, and in the next few years I plan to secure additional funds for a full-scale evaluation of attentional networks in children.
+
+\newpage{}
+%\bigskip{}
+\textbf{\Large{References}} \smallskip \hrule \medskip
+
+\begin{flushleft}
+\bibliographystyle{unsrt} 
+\bibliography{ccraddock_journal_pubs,ccraddock_conf_pubs,ccraddock_rs} 
+\end{flushleft}
+\end{document}
