@@ -1,10 +1,10 @@
 SHELL := /bin/bash
 CV_FILENAME = ccraddock_cv_$(shell date "+%m%d%Y").pdf
 RS_FILENAME = ccraddock_rs_$(shell date "+%m%d%Y").pdf
-LATEX_PATH = /usr/local/texlive/2012/bin/x86_64-darwin
+LATEX_PATH = /Library/TeX/texbin
 
-all: cv rs 
-	
+all: cv rs
+
 cv:	ccraddock_cv.tex ccraddock_journal_pubs.bib ccraddock_invited_talks.bib ccraddock_conf_pubs.bib
 	echo "Making $(CV_FILENAME)"
 	$(LATEX_PATH)/lualatex ccraddock_cv
@@ -25,4 +25,3 @@ rs: ccraddock_rs.tex
 
 clean:
 	rm -v *.aux *.bbl *.blg *.log
-
