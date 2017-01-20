@@ -1,0 +1,98 @@
+%!TeX spellcheck = en-US
+\documentclass[letterpaper,11pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=.75in,bmargin=1in,lmargin=.75in,rmargin=.75in}
+%\usepackage{setspace}
+%\usepackage[dot,sectcntreset]{bibtopic}
+%\usepackage{natbib}
+\usepackage{fontspec}
+%\setmainfont{Georgia}
+\setmainfont{Arial}
+\usepackage[parfill]{parskip}
+%\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+\definecolor{richgreen}{RGB}{115,147,61}
+\definecolor{richorange}{RGB}{245,128,37}
+\definecolor{richblue}{RGB}{25,57,138}
+\definecolor{richred}{RGB}{215,89,32}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfill}}}
+{\end{list}}
+
+\makeatother
+%\usepackage{pslatex}
+\usepackage[english]{babel}
+
+% adjusting spacing
+%\setlength{\lineskip}{0pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+%\setlength{\topmargin}{0pt}
+%\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{0pt}
+%\setlength{\itemsep}{10pt}
+%\linespread{1}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\emph{R. Cameron Craddock}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\raggedright
+
+\begin{center}
+{\sffamily {\Huge Richard Cameron Craddock}}\\
+\bigskip{}
+%cameron.craddock@gmail.com\\
+%\smallskip{}
+%110 1\textsuperscript{st} Street, 29G\\ Jersey City, NJ 07302\\
+%(404) 625-4973\\
+%\smallskip{}
+%\bigskip{}
+\textbf{\Large Teaching Statement}\\
+%Prepared \today\\
+\end{center}
+
+\bigskip{}
+\textbf{\Large{Philosophy}} \smallskip \hrule \medskip
+A successful engineer, no matter their career, is able to find creative ways to apply fundamental theory to solve real-world problems in the face of constraint. As an engineering professor, my main teaching objective is to facilitate students to attain a strong foundation in fundamental theory and an understanding of when and how it can be applied. As a mentor and advisor, my goal is to set an example that will instill the importance of technical rigor and ethical behavior in my protégés. I take both of these responsibilities very seriously and consider them to be the most rewarding aspects of a career as a university professor.
+
+I take pride in my ability to present complex concepts in a way that make them easy to understand. Unfortunately, I have found that a variety of other factors, such as a poor course design and lack of student engagement, can hinder learning despite my success at elucidating course material. I have developed a few strategies that in my experience help to remove these factors. At the beginning of the course I clearly explain the syllabus and my criteria for successful course completion. I strictly adhere to the course schedule, which I find helps students to successfully manage their course load. I give frequent homework assignments and quizzes to provide students with feedback and ample opportunity to improve their performance. I make myself available to students after class, several times a week during office hours, and by email to address any concerns or questions that they may have.
+
+Lack of excitement for a course or not understanding its value will adversely affect student performance. My plan for engaging students begins by providing a high-level course overview that helps them to understand the importance of the topics covered and how they are useful in a variety of different applications. To keep a continuity between lectures, I begin each by reminding students of what has been covered and by positioning new material within the context of the overall course objectives. I elaborate on course material using in-class examples from a variety of application areas. I facilitate active learning by assigning group projects that provide students hands-on experience with the practical application of the course material, while building an ethos of teamwork and collaboration.
+
+A teacher succeeds through a clear exposition of course concepts, exciting students about course materials, and removing barriers to student success. But, there are no perfect teachers or teaching philosophies. One of the things that makes me a good teacher is my strong willingness to learn. In addition to staying up to date on the topic areas I teach, I am dedicated to constantly improving my teaching abilities. I see each new course as an opportunity to better myself by integrating feedback from other professors, student performance, teacher evaluations and new educational technologies.
+
+\textbf{\Large{Experience}} \smallskip \hrule \medskip
+
+Throughout my career, I have had experience teaching topics related to MRI and brain imaging at international conferences, in educational workshops and symposia, and in graduate-level university courses. Perhaps my most ambitious teaching enterprise to date has been founding, organizing and teaching at Brainhack, an educational workshop on the application of computational tools and data analytical techniques to neuroscience data sets. Brainhack is a novel workshop that combines elements of hackathons, where attendees work together in close collaboration on research projects, with educational courses on neuroscientific data, software development, and data analysis techniques. As the director of Brainhack, I have been heavily involved in developing the educational agenda and have taught several of the courses. There have been 12 events since the first Brainhack was held in 2012. Two of these were synchronized events, in which regional Brainhacks occurred in eight different cities that were linked via video conference. This distributed model provides an innovative way to engage junior researchers and those from developing countries who lack the funds to travel to international events.
+
+Beyond Brainhack, I have been very active in teaching neuroimaging courses, many of which are offered in developing countries in Latin America. In 2013, 2014, and 2015 I prepared and taught several lectures in the annual ``Functional Neuroimaging: A Hands-on Approach'' workshop organized by the Brain Institute of the Pontifical Catholic University of Rio Grande do Sul (PUCRS) in Porto Alegre, Brazil. This course is one of a kind in southern South America and draws students from as far away as Argentina. I have also prepared and taught one credit hour (12 lecture hours) of the ``Biomedical Instrumentation and Medical Imaging — Mapping the Connectivity of the Human Brain'' graduate course in the Electrical Engineering department at PUCRS. At the invitation of local researchers, I have provided two-day intensive hands-on courses on neuroimaging data processing and analysis at the University of Miami, University of Southern California, and two courses in the Neurobiology Institute at the National Autonomous University of Mexico in Queretaro, Mexico. I have also offered a two-day course at my home institution, the Child Mind Institute in New York City, which drew over 40 participants from 6 different academic institutions in the New York City area.
+
+\textbf{\Large{Future Teaching}} \smallskip \hrule \medskip
+
+<customized to school>
+
+\end{document}
