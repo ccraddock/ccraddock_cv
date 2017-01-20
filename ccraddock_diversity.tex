@@ -1,0 +1,86 @@
+%!TeX spellcheck = en-US
+\documentclass[letterpaper,11pt]{article}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=.75in,bmargin=1in,lmargin=.75in,rmargin=.75in}
+%\usepackage{setspace}
+%\usepackage[dot,sectcntreset]{bibtopic}
+%\usepackage{natbib}
+\usepackage{fontspec}
+%\setmainfont{Georgia}
+\setmainfont{Arial}
+\usepackage[parfill]{parskip}
+%\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+\definecolor{richgreen}{RGB}{115,147,61}
+\definecolor{richorange}{RGB}{245,128,37}
+\definecolor{richblue}{RGB}{25,57,138}
+\definecolor{richred}{RGB}{215,89,32}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfill}}}
+{\end{list}}
+
+\makeatother
+%\usepackage{pslatex}
+\usepackage[english]{babel}
+
+% adjusting spacing
+%\setlength{\lineskip}{0pt}
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt}
+%\setlength{\topmargin}{0pt}
+%\setlength{\topsep}{0pt}
+%\setlength{\partopsep}{0pt}
+%\setlength{\itemsep}{10pt}
+%\linespread{1}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\emph{R. Cameron Craddock}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\raggedright
+
+\begin{center}
+{\sffamily {\Huge Richard Cameron Craddock}}\\
+\bigskip{}
+%cameron.craddock@gmail.com\\
+%\smallskip{}
+%110 1\textsuperscript{st} Street, 29G\\ Jersey City, NJ 07302\\
+%(404) 625-4973\\
+%\smallskip{}
+%\bigskip{}
+\textbf{\Large Statement of Contributions to Diversity}\\
+%Prepared \today\\
+\end{center}
+
+Throughout my career I have consistently worked to expand  diversity among engineers and neuroimaging researchers. As a graduate student I was a mentor in Georgia Tech's Intel Undergraduate Scholars Program. This program paired female and minority undergraduates with graduate students to perform research projects aimed at encouraging them to pursue careers in research. I mentored four students through this program and was proud when they all won honors at the annual undergraduate research symposium.
+
+During my postgraduate fellowships and my current career, I have been involved in several intiatives for educating junior researchers and those from developing countries in techniques for performing human neuroimaging research. I have taught at the annual ``Functional Neuroimaging: A Hands-on Approach'' workshop organized by the Brain Institute of the Pontifical Catholic University of Rio Grande do Sul (PUCRS) in Porto Alegre, Brazil in 2013, 2014, and 2015. I have also taught neuroimaging courses at the Neurobiology Institute at the National Autonomous University of Mexico in Queretaro, Mexico in 2015 and 2016. Both of these well attended initiatives have been wildly successful at providing researchers with very limited resources skills to help advance their research careers.
+
+In an effort to promote the use of computational and data science methods in neuroimaging, and to teach these skills to wide spectrum of researchers, my colleagues and I founded the Brainhack organzation. Brainhack hosts three-day events that convene researchers at various stages of their careers to work together to learn advanced neuroimagng skills. We have applied for and received funding from private and public institutions to provide travel awards for Brainhack attendees. A diverse panel of researchers chooses award recipients using a merit-based system that favors underrepresented applicants. I am proud that we have accomplished a nearly 50-50 gender breakdown at our last event and hope to continue this into the future.
+
+I plan to continue promoting diversity throughout my career. As a professor, I look forward to participating in campus wide intiatives for encouraging women and minorities to pursue higher education and research careers. I plan to continue my educational activities in South America, which I beleive provides an invaluable resource for enabling researchers in developing countries to paricipate in human neuroimaging research. Finally, I plan to continue to develop initiatives for encouraging diversity among attendees and leadership of Brainhack events.
+
+\end{document}
