@@ -7,6 +7,12 @@ LATEX_PATH = /Library/TeX/texbin
 
 all: cv rs
 
+craddock_publications.bib:
+	curl -S -o craddock_publications.bib https://raw.githubusercontent.com/ccraddock/craddock_publications_bibtex/master/craddock_publications.bib
+
+%.bib: craddock_publications.bib
+	./build_bibtex_files.py
+
 cv:	ccraddock_cv.tex ccraddock_journal_pubs.bib ccraddock_invited_talks.bib ccraddock_conf_pubs.bib
 	echo "Making $(CV_FILENAME)"
 	$(LATEX_PATH)/lualatex ccraddock_cv
