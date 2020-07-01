@@ -13,7 +13,7 @@ craddock_publications.bib:
 %.bib: craddock_publications.bib
 	./build_bibtex_files.py
 
-cv:	ccraddock_cv.tex ccraddock_journal_pubs.bib ccraddock_invited_talks.bib ccraddock_conf_pubs.bib
+cv:	ccraddock_cv.tex ccraddock_journal_pubs.bib regional_talk_abstracts.bib national_talk_abstracts.bib international_talk_abstracts.bib
 	echo "Making $(CV_FILENAME)"
 	$(LATEX_PATH)/lualatex ccraddock_cv
 	$(LATEX_PATH)/bibtex ccraddock_cv.1
@@ -24,10 +24,10 @@ cv:	ccraddock_cv.tex ccraddock_journal_pubs.bib ccraddock_invited_talks.bib ccra
 	$(LATEX_PATH)/lualatex ccraddock_cv
 	mv ccraddock_cv.pdf $(CV_FILENAME)
 
+# $(LATEX_PATH)/bibtex ccraddock_resume.1
 resume:	ccraddock_resume.tex ccraddock_journal_pubs.bib ccraddock_invited_talks.bib ccraddock_conf_pubs.bib
 	echo "Making $(RESUME_FILENAME)"
 	$(LATEX_PATH)/lualatex ccraddock_resume
-	$(LATEX_PATH)/bibtex ccraddock_resume.1
 	$(LATEX_PATH)/lualatex ccraddock_resume
 	$(LATEX_PATH)/lualatex ccraddock_resume
 	mv ccraddock_resume.pdf $(RESUME_FILENAME)
